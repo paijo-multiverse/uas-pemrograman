@@ -19,11 +19,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          margin: EdgeInsets.only(top: 50, left: 5, right: 20),
+          margin: const EdgeInsets.only(top: 50, left: 5, right: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -33,34 +33,34 @@ class _HomeState extends State<Home> {
                   Icon(Icons.shopping_cart)
                 ],
               ),
-              SizedBox(height: 15.0),
-              Text(
+              const SizedBox(height: 15.0),
+              const Text(
                 'Delicious Food',
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
               ),
-              Text(
+              const Text(
                 'Discover good and great food',
                 style: TextStyle(color: Colors.black38),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               showItem(),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => Details(),));
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => const Details(),));
                       },
                       child: Container(
                         
-                        margin: EdgeInsets.all(4),
+                        margin: const EdgeInsets.all(4),
                         child: Material(
                           elevation: 10,
                           borderRadius: BorderRadius.circular(20),
                           child: Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -69,32 +69,32 @@ class _HomeState extends State<Home> {
                                   width: 150,
                                   height: 150,
                                 ),
-                                Text(
+                                const Text(
                                   'Cheese pizza',
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
-                                SizedBox(height: 5),
-                                Text(
+                                const SizedBox(height: 5),
+                                const Text(
                                   'Fresh and baked',
                                   style: TextStyle(
                                       fontSize: 11, color: Colors.black38),
                                 ),
-                                SizedBox(height: 5),
-                                Text('\$12.99')
+                                const SizedBox(height: 5),
+                                const Text('\$12.99')
                               ],
                             ),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 15),
+                    const SizedBox(width: 15),
                     Container(
-                      margin: EdgeInsets.all(4),
+                      margin: const EdgeInsets.all(4),
                       child: Material(
                         elevation: 10,
                         borderRadius: BorderRadius.circular(20),
                         child: Container(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -104,18 +104,18 @@ class _HomeState extends State<Home> {
                                 height: 150,
                                 fit: BoxFit.cover,
                               ),
-                              Text(
+                              const Text(
                                 'Vegie Salad',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(height: 5),
-                              Text(
+                              const SizedBox(height: 5),
+                              const Text(
                                 'Fresh and baked',
                                 style: TextStyle(
                                     fontSize: 11, color: Colors.black38),
                               ),
-                              SizedBox(height: 5),
-                              Text(
+                              const SizedBox(height: 5),
+                              const Text(
                                 '\$12.99',
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               )
@@ -127,7 +127,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               // Material(
               //   elevation: 10,
               //   borderRadius: BorderRadius.circular(20),
@@ -189,7 +189,7 @@ class _HomeState extends State<Home> {
                   color: icecream ? Colors.orange : Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Image.asset(
                   'assets/images/ice-cream.png',
                   height: 40,
@@ -213,7 +213,7 @@ class _HomeState extends State<Home> {
                   color: burger ? Colors.orange : Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Image.asset(
                   'assets/images/burger.png',
                   height: 40,
@@ -237,7 +237,7 @@ class _HomeState extends State<Home> {
                   color: pizza ? Colors.orange : Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Image.asset(
                   'assets/images/pizza.png',
                   height: 40,
@@ -261,7 +261,7 @@ class _HomeState extends State<Home> {
                   color: salad ? Colors.orange : Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Image.asset(
                   'assets/images/salad.png',
                   height: 40,

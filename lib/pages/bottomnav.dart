@@ -24,10 +24,10 @@ class _BottomNavState extends State<BottomNav> {
   @override
   void initState() {
     super.initState();
-    homepage = Home();
-    profile = Profile();
-    wallet = Wallet();
-    order = Order();
+    homepage = const Home();
+    profile = const Profile();
+    wallet = const Wallet();
+    order = const Order();
     pages = [homepage, profile, wallet, order];
     // currentPage = homepage;
   }
@@ -37,9 +37,9 @@ class _BottomNavState extends State<BottomNav> {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
         height: 60,
-        animationDuration: Duration(milliseconds: 300),
+        animationDuration: const Duration(milliseconds: 300),
         backgroundColor: Colors.black,
-        items: [
+        items: const [
         Icon(Icons.home, size: 30),
         Icon(Icons.person, size: 30),
         Icon(Icons.wallet, size: 30),
