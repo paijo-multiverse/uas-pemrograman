@@ -1,17 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:myapp/pages/forgotpass.dart';
-import 'package:myapp/pages/sign_up.dart';
+import 'package:myapp/pages/login.dart';
 
-class LogIn extends StatefulWidget {
-  const LogIn({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<LogIn> createState() => _LogInState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _LogInState extends State<LogIn> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,9 +71,17 @@ class _LogInState extends State<LogIn> {
                         SizedBox(
                           height: 30,
                         ),
-                        Text('Login',
+                        Text('Sign Up',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                         SizedBox(height: 30),
+                        TextField(
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:1997085966.
+                            decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.person_outline),
+                          hintStyle: TextStyle(color: Colors.grey),
+                          hintText: 'Name',
+                        )),
+                        SizedBox(height: 10),
                         TextField(
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1997085966.
                             decoration: InputDecoration(
@@ -93,33 +98,19 @@ class _LogInState extends State<LogIn> {
                             hintText: 'Password',
                           ),
                         ),
-                        SizedBox(height: 10),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => ForgotPassword()));
-                          },
-                          child: Align(
-                            alignment: Alignment.centerRight,
-                            child: Text(
-                              'Forgot Password?',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                          ),
-                        ),
                         SizedBox(height: 40),
                         Container(
                             child: ElevatedButton(
-                                onPressed: () {}, child: Text("Login"))),
-                                SizedBox(height: 50),
-                                Text('Dont have account?',
-                                    style: TextStyle(color: Colors.grey)),
-                                GestureDetector(
-                                    onTap: () {
-                                      Navigator.push(context, MaterialPageRoute(
-                                          builder: (context) => SignUp()));
-                                    },
-                                  child: Text('Sign Up'))
+                                onPressed: () {}, child: Text("Daftar"))),
+                        SizedBox(height: 30),
+                        Text('Sudah punya akun?',
+                            style: TextStyle(color: Colors.grey)),
+                        GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) => LogIn()));
+                            },
+                            child: Text('Log In'))
                       ]),
                     ),
                   ),
