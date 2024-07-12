@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:myapp/pages/bottomnav.dart';
+import 'package:myapp/pages/login.dart';
 import 'package:myapp/pages/profile.dart';
 
 // import 'package:myapp/pages/onboard.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomNav(),
+      debugShowCheckedModeBanner: false,
+      home: LogIn(),
     );
   }
 }
