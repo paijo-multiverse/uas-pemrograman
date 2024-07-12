@@ -91,12 +91,15 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                 }
                               },
                               child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    minimumSize: Size(350, 35),
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(7)),
-                                    backgroundColor: Colors.black),
-                                  onPressed: () {}, child: Text('Send email', style: TextStyle(color: Colors.white))))
+                                  style: ElevatedButton.styleFrom(
+                                      minimumSize: Size(350, 35),
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(7)),
+                                      backgroundColor: Colors.black),
+                                  onPressed: () {},
+                                  child: Text('Send email',
+                                      style: TextStyle(color: Colors.white))))
                         ],
                       ),
                     ))),
@@ -107,7 +110,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               margin: EdgeInsets.only(bottom: 50),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pop(context, MaterialPageRoute(builder: (context) => LogIn()));
+                  Navigator.pop(context,
+                      MaterialPageRoute(builder: (context) => LogIn()));
                 },
                 child: Text(
                   'Back to Login',

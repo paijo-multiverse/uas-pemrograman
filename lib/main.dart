@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:myapp/pages/bottomnav.dart';
-import 'package:myapp/pages/login.dart';
-import 'package:myapp/pages/profile.dart';
 import 'package:myapp/pages/home.dart';
 import 'package:myapp/pages/login.dart';
 import 'package:myapp/pages/sign_up.dart';
@@ -20,8 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: LogIn(),
     );
   }
 }
