@@ -72,7 +72,7 @@ class _SignUpState extends State<SignUp> {
                           height: 30,
                         ),
                         Text('Sign Up',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                         SizedBox(height: 30),
                         TextField(
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1997085966.
@@ -101,7 +101,12 @@ class _SignUpState extends State<SignUp> {
                         SizedBox(height: 40),
                         Container(
                             child: ElevatedButton(
-                                onPressed: () {}, child: Text("Daftar"))),
+                              style: ElevatedButton.styleFrom(
+                                  minimumSize: Size(350, 35),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(7)),
+                                  backgroundColor: Colors.orange),
+                                onPressed: () {}, child: Text("Daftar", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),))),
                         SizedBox(height: 30),
                         Text('Sudah punya akun?',
                             style: TextStyle(color: Colors.grey)),

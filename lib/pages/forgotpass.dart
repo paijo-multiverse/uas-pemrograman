@@ -1,5 +1,6 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:644413251.
 import 'package:flutter/material.dart';
+import 'package:myapp/pages/login.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
@@ -47,8 +48,11 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
             ),
             SizedBox(height: 10),
-            Text(
-                'Enter your email and we will send you a link to reset your password'),
+            Container(
+              margin: EdgeInsets.only(left: 10, right: 10),
+              child: Text(
+                  'Enter your email and we will send you a link to reset your password'),
+            ),
             Expanded(
                 child: Form(
                     key: _formKey,
@@ -72,6 +76,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                 },
                                 decoration: InputDecoration(
                                     hintText: 'Email',
+                                    hintStyle: TextStyle(color: Colors.grey),
                                     prefixIcon: Icon(Icons.person),
                                     border: InputBorder.none),
                               )),
@@ -86,15 +91,29 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                                 }
                               },
                               child: ElevatedButton(
-                                  onPressed: () {}, child: Text('Send email')))
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(350, 35),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(7)),
+                                    backgroundColor: Colors.black),
+                                  onPressed: () {}, child: Text('Send email', style: TextStyle(color: Colors.white))))
                         ],
                       ),
                     ))),
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:3881168149.
             SizedBox(height: 20),
-            Text(
-              'Back to Login',
-              style: TextStyle(color: Colors.blue),
+            Container(
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:1752019263.
+              margin: EdgeInsets.only(bottom: 50),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pop(context, MaterialPageRoute(builder: (context) => LogIn()));
+                },
+                child: Text(
+                  'Back to Login',
+                  style: TextStyle(color: Colors.black54),
+                ),
+              ),
             ),
           ],
         ),

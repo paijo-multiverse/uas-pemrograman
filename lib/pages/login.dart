@@ -75,7 +75,7 @@ class _LogInState extends State<LogIn> {
                           height: 30,
                         ),
                         Text('Login',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                         SizedBox(height: 30),
                         TextField(
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1997085966.
@@ -103,14 +103,19 @@ class _LogInState extends State<LogIn> {
                             alignment: Alignment.centerRight,
                             child: Text(
                               'Forgot Password?',
-                              style: TextStyle(color: Colors.blue),
+                              style: TextStyle(color: Colors.black54, fontSize: 12),
                             ),
                           ),
                         ),
                         SizedBox(height: 40),
                         Container(
                             child: ElevatedButton(
-                                onPressed: () {}, child: Text("Login"))),
+                                style: ElevatedButton.styleFrom(
+                                    minimumSize: Size(350, 35),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(7)),
+                                    backgroundColor: Colors.orange),
+                                onPressed: () {}, child: Text("Login", style: TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),))),
                                 SizedBox(height: 50),
                                 Text('Dont have account?',
                                     style: TextStyle(color: Colors.grey)),
