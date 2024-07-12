@@ -1,7 +1,6 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1171186571.
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:3277447132.
 
-
 import 'package:flutter/material.dart';
 import 'package:myapp/pages/details.dart';
 
@@ -27,7 +26,7 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Hello, Ginosko',
+                    'Hello, Asep',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Icon(Icons.shopping_cart)
@@ -51,10 +50,13 @@ class _HomeState extends State<Home> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => const Details(),));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Details(),
+                            ));
                       },
                       child: Container(
-                        
                         margin: const EdgeInsets.all(4),
                         child: Material(
                           elevation: 10,

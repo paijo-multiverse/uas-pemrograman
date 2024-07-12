@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "788584320200",
-    "project_id": "fooddeliveryapp-cb64a",
-    "storage_bucket": "fooddeliveryapp-cb64a.appspot.com"
+    "project_number": "28072663557",
+    "project_id": "ecommerceifb6k-6c797",
+    "storage_bucket": "ecommerceifb6k-6c797.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:788584320200:android:b9ee420236099e7be269fd",
+        "mobilesdk_app_id": "1:28072663557:android:ccae8379a5aa8c5fb59a6c",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.example.myapp"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC7UHmm2bkG-7t5xFj7Y2njjywYFcZqkfk"
+          "current_key": "AIzaSyCwUd69F1wtD_Gxe-L5iu9jM0khd_pBzAM"
         }
       ],
       "services": {

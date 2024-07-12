@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/pages/bottomnav.dart';
 import 'package:myapp/pages/home.dart';
 import 'package:myapp/pages/login.dart';
+import 'package:myapp/pages/onboard.dart';
 import 'package:myapp/pages/sign_up.dart';
 
 // import 'package:myapp/pages/onboard.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LogIn(),
+      home: BottomNav(),
     );
   }
 }
